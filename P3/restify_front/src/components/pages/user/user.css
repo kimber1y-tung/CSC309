@@ -1,0 +1,33 @@
+.title_container {
+    text-align: center;
+    width: 50vw;
+    border-bottom: 0.5vh solid;
+    border-image: linear-gradient(to right,rgba(0, 202, 252, 0.8), rgba(37, 117, 238, 0.925)) 1;
+    font-size: 6vh;
+    font-weight: 600;
+    margin-bottom: 4vh;
+}
+
+#main_container {
+    bottom: 8vw;
+    width: 70%;
+    left: 10vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-group {
+    width: 40vw;
+    margin: 1vh 1vw 2vh 0;
+}
+
+#buttons {
+    margin: 2vh 2vw 5vh 0;
+    width: 6vw;
+}
+
+#avatar_showcase {
+    width: 150px;
+    height: 150px;
+}

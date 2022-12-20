@@ -1,0 +1,54 @@
+.navbar-brand{
+    float: left;
+}
+
+body{
+    background-color: papayawhip;
+    background-image: linear-gradient(white, papayawhip);
+}
+
+.form-group {
+    width: 40vw;
+    margin: 1vh 1vw 2vh 0;
+}
+
+#buttons {
+    margin: 2vh 2vw 5vh 0;
+    width: 6vw;
+}
+
+#avatar_showcase {
+    width: 150px;
+    height: 150px;
+}
+
+.title_container {
+    font-size: xx-large;
+}
+
+#menu {
+    display: flex;
+    flex-flow: column wrap;
+    list-style-type: none;
+    height: 80vh;
+    width: 70%;
+    padding: 0;
+}
+
+#menu > li {
+    margin: 3vh 5vw 1vh 0;
+}
+
+li > p {
+    margin: 0;
+}
+
+#dish_details {
+    word-wrap: normal;
+    width: 30vh;
+    font-size: small;
+}
+
+.nav-item {
+    caret-color: transparent;
+}
