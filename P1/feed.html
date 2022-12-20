@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="feed_style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Eo_circle_brown_letter-r.svg/1200px-Eo_circle_brown_letter-r.svg.png", height="50", width="50">
+                    </a>
+
+                    <ul class="nav nav-tabs" id="tabs">
+                        <li class="nav-item">
+                            <a class="nav-link" href="search.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page">Feed</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="myRestaurant.html">My Restaurant</a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li> -->
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="signup.html">Sign-Up</a>
+                        </li> -->
+
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Profile
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="user-page.html">Edit Profile</a>
+                            <!-- <a class="dropdown-item" href="#">Another action</a> -->
+                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <!-- <a class="dropdown-item" href="#">Separated link</a> -->
+                          </div>
+                        </div>
+
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Notifications
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Notification 1</a>
+                            <a class="dropdown-item" href="#">Notification 2</a>
+                            <a class="dropdown-item" href="#">Notification 3</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Mark all as read</a>
+                          </div>
+                        </div>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href="login.html">Logout</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+
+                <nav class="navbar navbar-light" id="search">
+                  <div class="container-fluid">
+                      <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search Restaurants" aria-label="Search"
+                      list = "restaurants_list">
+                          <datalist id = "restaurants_list">
+                              <option>Mcdonald</option>
+                              <option>KFC</option>
+                              <option>BurgerKing</option>
+                              <option>Daldongnae</option>
+                              <option>Liu Yi Shou</option>
+                              <option>HY's Steakhouse & Cocktail Bar</option>
+                          </datalist>
+                      <button class="btn btn-outline-primary" type="submit">
+                          Search</button>
+                      </form>
+                  </div>
+              </nav>
+            </div>
+        </nav>
+
+        <div class="cards">
+
+        
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <a href="restaurants_daldongnae.html">
+                  <img src="https://goingawesomeplaces.com/wp-content/uploads/2021/08/dal-dong-nae-korean-bbq-north-york-restaurant.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Daldongnae</h5>
+                  <p class="card-text">THE BEST KOREAN BBQ IN TORONTO. An Authentic Korean BBQ experience! </p>
+                  <a href="#" class="btn btn-primary">Unfollow</a>
+                  <a href="#" class="btn btn-primary">Comments</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="restaurants_liuyishou.html">
+                  <img src="https://wepiecetogether.com/wp-content/uploads/00007.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Liu Yi Shou</h5>
+                  <p class="card-text">One of the most popular restaurants serving authentic hot pot & Chinese food in North America.</p>
+                  <a href="#" class="btn btn-primary">Unfollow</a>
+                  <a href="#" class="btn btn-primary">Comments</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="restaurants_steakhouse.html">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/19/7f/43/77/canada-prime-porterhouse.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">HY's Steakhouse & Cocktail Bar</h5>
+                  <p class="card-text">A simple and unwavering commitment to fine food, service, and a perfectly cooked steak.</p>
+                  <a href="#" class="btn btn-primary">Unfollow</a>
+                  <a href="#" class="btn btn-primary">Comments</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://lh3.googleusercontent.com/-5JNTAKCyCx8/W9Pl0bGgMFI/AAAAAAAANd4/qjemZHbX_uUmyuqCrJZ_FO3KI4RTWsXJwCHMYCw/s5000/%255BUNSET%255D" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Fishman Lobster Clubhouse</h5>
+                  <p class="card-text">Well know for its seafood quality and quantity.</p>
+                  <a href="#" class="btn btn-primary">Unfollow</a>
+                  <a href="#" class="btn btn-primary">Comments</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  
+        
+
+        
+
+
+    </body>
+
+
+</html>

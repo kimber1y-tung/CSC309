@@ -1,0 +1,23 @@
+
+
+.navbar-brand{
+    float: left;
+}
+
+
+.card {
+    width: 85%;
+    height: 15cm;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 50px; /* Added */
+}
+
+.cards{
+    background-color: burlywood;
+    background-image: linear-gradient(white, burlywood);
+}
+
+.nav-item {
+    caret-color: transparent;
+}

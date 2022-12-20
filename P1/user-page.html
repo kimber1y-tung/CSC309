@@ -1,0 +1,275 @@
+<!--
+    Since text bar toggling (disable/editable) is undoable without JS, and the database is not yet constructed,
+    this page currently is only a appearance demo without actual functionality.
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="user_page-style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <title>User Page</title>
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#left_list" data-bs-offset="-20" tabindex="0">
+        <div id="navbar-container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+    
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Eo_circle_brown_letter-r.svg/1200px-Eo_circle_brown_letter-r.svg.png", height="50", width="50">
+                        </a>
+    
+                        <ul class="nav nav-tabs" id="tabs">
+                            <li class="nav-item">
+                            <a class="nav-link" href="search.html">Home</a>
+                            </li>
+    
+                            <li class="nav-item">
+                            <a class="nav-link" href="feed.html">Feed</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="myRestaurant.html" >My Restaurant</a>
+                            </li>
+    
+                            <!-- <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Profile</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-warning">Notifications</button>
+                                <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Notification 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Notification 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Notification 3</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Mark all as read</a></li>
+                                </ul>
+                            </div> -->
+                            
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Profile
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="user-page.html">Edit Profile</a>
+                                  <!-- <a class="dropdown-item" href="#">Another action</a> -->
+                                  <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                                  <!-- <div class="dropdown-divider"></div> -->
+                                  <!-- <a class="dropdown-item" href="#">Separated link</a> -->
+                                </div>
+                              </div>
+      
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Notifications
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Notification 1</a>
+                                  <a class="dropdown-item" href="#">Notification 2</a>
+                                  <a class="dropdown-item" href="#">Notification 3</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Mark all as read</a>
+                                </div>
+                              </div>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+        
+    
+                <nav class="navbar navbar-light" id="search">
+                    <div class="container-fluid">
+                        <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search Restaurants" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                    </div>
+                </nav>  
+                </div>
+            </nav>
+            </div>
+        <div id="left_list" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#profile_form_title">Profile</a>
+            <a class="list-group-item list-group-item-action" href="#restaurant_form_title">Restaurant</a>
+            <a class="list-group-item list-group-item-action" href="#menu_form_title">Menu</a>
+            <a class="list-group-item list-group-item-action" href="#navbar-container" style="background-color: rgb(253, 148, 11);border-color: rgb(253, 148, 11); color: white;">Back to Top</a>
+        </div>
+
+        <div class="container" id="main_container">
+            <div class="title_container" id="profile_form_title">
+                Profile
+            </div>
+            <div class="form_container" id="profile_form_container">
+                <form>
+                    <label class="form-label">First Name</label>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="First-Name" value="Yuchen" required disabled>
+                    </div>
+                    <label class="form-label">Last Name</label>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="Last-Name" value="Bao" required disabled>
+                    </div>
+                    <label class="form-label">Email</label>
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" value="xxx.xx@mail.utoronto.ca" required disabled>
+                    </div>
+                    <label class="form-label">Phone Number</label>
+                    <div class="form-group">
+                      <input type="tel" class="form-control" name="phone" value="123-456-7890" pattern="[0-9]{3,4}-[0-9]{3}-[0-9]{4}" required disabled>
+                    </div>
+                    <label class="form-label">Avatar</label><br>
+                    <img id="avatar_showcase" src="https://i1.sndcdn.com/artworks-WqydTb0pypbi7hZI-PLEKyQ-t500x500.jpg">
+                    <div class="form-group">
+                        <input type="file" id="avatar_upload" name="avatar" accept="image/*" disabled>
+                    </div>
+                    <small id="usage-text" class="form-text text-muted">Use the edit button to enable editing. When done, press the Confirm button to save your changes.</small><br>
+                    <button id="buttons" class="btn btn-light">Edit</button>
+                    <button type="submit" id="buttons" class="btn btn-primary" >Confirm</button>
+
+                </form>
+            </div>
+            <div class="title_container" id="restaurant_form_title">
+                Restaurant
+            </div>
+            <div class="form_container" id="restaurant_form_container">
+                <form>
+                    <label class="form-label">Name</label>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="name" value="MacDonald" required disabled>
+                    </div>
+                    <label class="form-label">Address</label>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="address" value="1234 Mississauga Road, ON" required disabled>
+                    </div>
+                    <label class="form-label">Postal Code</label>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="postal" value="A1B2C3" pattern="[A-Z]{1}[0-9]{1}[A-Z]{1}[0-9]{1}[A-Z]{1}[0-9]{1}" required disabled>
+                    </div>
+                    <label class="form-label">Phone Number</label>
+                    <div class="form-group">
+                      <input type="tel" class="form-control" name="phone" value="123-456-7890" pattern="[0-9]{3,4}-[0-9]{3}-[0-9]{4}" required disabled>
+                    </div>
+                    <label class="form-label">Logo</label><br>
+                    <img id="avatar_showcase" src="https://www.stjegypt.com/uploads/503099209134.jpg">
+                    <div class="form-group">
+                        <input type="file" id="avatar_upload" name="avatar" accept="image/*" disabled>
+                    </div>
+                    <small id="usage-text" class="form-text text-muted">Use the edit button to enable editing. When done, press the Confirm button to save your changes.</small><br>
+                    <button id="buttons" class="btn btn-light" disabled>Add</button>
+                    <button id="buttons" class="btn btn-light">Edit</button>
+                    <button type="submit" id="buttons" class="btn btn-primary" >Confirm</button>
+                </form>
+            </div>
+            <div class="title_container" id="menu_form_title">
+                Menu
+            </div>
+            <div class="form_container" id="menu_form_container">
+                <form>
+                <ul id="menu">
+                    <li>
+                        <p>Some dishes A</p>
+                        <div id="dish_details">
+                            Some dish descriptions --------------------------------------------------------------------<br>
+                            $0.00
+                        </div>
+                    </li>
+                    <li>
+                        <p>Some dishes B</p>
+                        <div id="dish_details">
+                            Some dish descriptions --------------------------------------------------------------------<br>
+                            $0.00
+                        </div>
+                    </li>
+                    <li>
+                        <p>Some dishes C</p>
+                        <div id="dish_details">
+                            Some dish descriptions --------------------------------------------------------------------<br>
+                            $0.00
+                        </div>
+                    </li>
+                    <li>
+                        <p>Some dishes D</p>
+                        <div id="dish_details">
+                            Some dish descriptions --------------------------------------------------------------------<br>
+                            $0.00
+                        </div>
+                    </li>
+                    <li>
+                        <p>Some dishes E</p>
+                        <div id="dish_details">
+                            Some dish descriptions --------------------------------------------------------------------<br>
+                            $0.00
+                        </div>
+                    </li>
+                    <li>
+                        <p>Some dishes F</p>
+                        <div id="dish_details">
+                            Some dish descriptions --------------------------------------------------------------------<br>
+                            $0.00
+                        </div>
+                    </li>
+                    <li>
+                        <p>Some dishes G</p>
+                    </li>
+                    <li>
+                        <p>Some dishes H</p>
+                        <div id="dish_details">
+                            Some dish descriptions --------------------------------------------------------------------<br>
+                            $0.00
+                        </div>
+                    </li>
+                    <li>
+                        <p>Some dishes I</p>
+                    </li>
+                    <li>
+                        <p>Some dishes J</p>
+                    </li>
+                    <li>
+                        <p>Some dishes K</p>
+                    </li>
+                    <li>
+                        <p>Some dishes L</p>
+                    </li>
+                    <li>
+                        <p>Some dishes M</p>
+                    </li>
+                    <li>
+                        <p>Some dishes N</p>
+                    </li>
+                    <li>
+                        <p>Some dishes O</p>
+                        <div id="dish_details">
+                            Some dish descriptions --------------------------------------------------------------------<br>
+                            $0.00
+                        </div>
+                    </li>
+                    <li>
+                        <p>Some dishes P</p>
+                    </li>
+                    <li>
+                        <p>Some dishes Q</p>
+                    </li>
+                </ul>
+                <button type="submit" id="buttons" class="btn btn-light" style="margin-top: 0;">Edit</button>
+                <button id="buttons" class="btn btn-primary" style="margin-top: 0;">Add</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

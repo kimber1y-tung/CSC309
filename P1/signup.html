@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="sign_up-style.css">
+    </head>
+    <body>
+        <div id="gridcontainer">
+            <div id="navbar-container">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+        
+        
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Eo_circle_brown_letter-r.svg/1200px-Eo_circle_brown_letter-r.svg.png", height="50", width="50">
+                            </a>
+        
+                            <ul class="nav nav-tabs" id="tabs">
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                                </li>
+        
+                                <li class="nav-item">
+                                <a class="nav-link" href="feed.html">Feed</a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">My Restaurant</a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html">Login</a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Sign-Up</a>
+                                </li>
+                            </ul>
+                        </div>
+        
+        
+                    <nav class="navbar navbar-light" id="search">
+                        <div class="container-fluid">
+                            <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search Restaurants" aria-label="Search">
+                            <button class="btn btn-outline-primary" type="submit">Search</button>
+                        </form>
+                        </div>
+                    </nav>  
+                    </div>
+                </nav>
+            </div>
+            <div id="pic-container">
+                <img id='sign-up-image' src="http://lobbyrestaurant.ca/lobby/wp-content/uploads/2017/03/room1.jpg">
+            </div>
+            <div id="sign-up-container">
+                <form>
+                    <p id="sign-up-form-title" style="caret-color: transparent;">Sign Up for Restify</p>
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" name="pwd" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" name="pwd-confirm" placeholder="Comfirm your password" required>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" name="terms" id="terms-check" required>
+                        <label style="caret-color: transparent;" class="form-check-label" for="terms-check">I agree with Restify's <a href="">Terms and Conditions</a>.</label>
+                      </div>
+                    <small style="caret-color: transparent;" id="privacy-notice" class="form-text text-muted">We value your privacy. <br> Your personal information will not be shared.</small>
+                    <button type="submit" class="btn btn-primary" id="sign-up-button">Submit</button>
+                </form>
+            </div>
+        </div>
+        <footer id="aboutsection">
+            <div id="footer-top">
+                Restify
+            </div>
+            <div id="footer-bot">
+                <ul id="bot-list">
+                    <li><a href="">Why Restify?</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Terms and Conditions</a></li>
+                </ul>
+            </div>
+        </footer>
+       
+    </body>
+</html>
+
+ 
+

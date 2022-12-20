@@ -1,0 +1,24 @@
+html{
+    background-color: papayawhip;
+}
+.suggest_restaurants{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 50px;
+    /* background-color: white;
+    background-image: linear-gradient(papayawhip, white); */
+}
+/*#suggest_restaurants2{*/
+/*    display: grid;*/
+/*    grid-template-columns: 33% 33% 33%;*/
+/*    margin-bottom: 50px;*/
+/*}*/
+.navbar-brand{
+    float: left;
+}
+
+
+#background{
+    background-color: papayawhip;
+    background-image: linear-gradient(white, papayawhip);
+}

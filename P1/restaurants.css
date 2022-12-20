@@ -1,0 +1,85 @@
+html{
+    background-color: papayawhip;
+}
+#info_div{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    text-align: center;
+}
+
+.composing{
+    display: grid;
+    /*grid-template-rows: 20% 80%*/
+}
+.front_composing{
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+.pic_composing{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    /*grid-template-rows: 33% 33% 33%;*/
+}
+
+.comment_front{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+.button{
+    background-color: papayawhip;
+}
+.comment{
+    background-color: cornsilk;
+}
+.navbar-brand{
+    float: left;
+}
+
+#background{
+    background-color: papayawhip;
+    background-image: linear-gradient(white, papayawhip);
+}
+.container{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.rounded-circle{
+    height: 30px;
+    width: auto;
+}
+.card{
+    width: 85%;
+    margin: 20px auto;
+    float: none;
+}
+.margin{
+    height: 100px;
+    width: 100%;
+}
+.text_box{
+    height: 150px;
+    width:100%;
+}
+#text_submit{
+    float: right;
+}
+#write_comment{
+    margin-bottom: 80px;
+}
+#submit_comment{
+    margin-top: 10px;
+    float: right;
+}
+
+.blog_button {
+    background: papayawhip;
+    padding: 1px 2px;
+    width: 90px;
+}
+
+.blog_button > a {
+    text-decoration: none;
+    color: black;
+}
